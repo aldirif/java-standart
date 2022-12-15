@@ -21,5 +21,10 @@ public class MainDataGeneric {
         Product product = new Product("Obat Awet Muda",1000000.0);
         data4.setData(product);
         System.out.println("data4 Value "+ data4.getData());
+        DataGeneric<Animal> data6 = new DataGeneric<>(new Animal("Kucing",4));
+        System.out.println("Data6 Value : "+ data6.getData());
+
+        DataGeneric<String> data5 = new DataGeneric<>("Data 5");
+        System.out.println("Data5 Value : "+ data5.getData());
     }
 }
